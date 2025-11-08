@@ -45,7 +45,7 @@ function App() {
     const maleVoice = voices.find(v => v.name.toLowerCase().includes("male") || v.name.toLowerCase().includes("english india"));
     const femaleVoice = voices.find(v => v.name.toLowerCase().includes("female"));
     setVoice(maleVoice || femaleVoice || voices[0]);
-  }, []);
+  });
 
   // Text-to-Speech with natural tone
   const speak = (text) => {
